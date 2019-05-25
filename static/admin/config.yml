@@ -2,18 +2,18 @@ backend:
   name: github
   repo: MozyOk/mozy-memo
   branch: master
- 
+
 publish_mode: editorial_workflow
- 
+
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
- 
+
 collections:
   - name: "post"
     label: "Post"
     folder: "content/posts"
     create: true
-    slug: "{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Descreption", name: "description", widget: "text"}
