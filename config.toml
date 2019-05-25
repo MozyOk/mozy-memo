@@ -1,16 +1,36 @@
 baseURL = "https://mozy-memo.netlify.com/"
 languageCode = "ja"
 title = "mozys Memo"
-copyright = "Copyright (c) 2018 - 2019, Mozy Okubo; all rights reserved."
+theme = "ezhil"
+
+# Enable syntax highlighting.
+pygmentsstyle = "vs"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
 
 [params]
-	highlight="github"
+recentPostsCount = 10
 
 	# Controls what items are listed in the top nav menu
 	# "none", or "categories"
 	# If you have too many categories to fit in the top nav menu, set this to "none"
 	topmenu="none"
 
-[author]
-    name = "Mozy Okubo"
-    github = "MozyOk"
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[params.social]]
+name = "Github"
+icon = "github"
+url = "https://github.com/MozyOk"
+
+# Enable tags.
+[taxonomies]
+   tag = "tags"
