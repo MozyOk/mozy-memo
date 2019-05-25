@@ -1,3 +1,16 @@
 baseURL = "https://mozy-memo.netlify.com/"
 languageCode = "ja"
 title = "mozys Memo"
+copyright = "Copyright (c) 2018 - 2019, Mozy Okubo; all rights reserved."
+
+[params]
+	highlight="github"
+
+	# Controls what items are listed in the top nav menu
+	# "none", or "categories"
+	# If you have too many categories to fit in the top nav menu, set this to "none"
+	topmenu="none"
+
+[author]
+    name = "Mozy Okubo"
+    github = "MozyOk"
